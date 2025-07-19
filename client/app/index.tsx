@@ -106,10 +106,12 @@ const HomeScreen = () => {
               <Text style={styles.userName}>Luffy 👋</Text>
             </View>
             <TouchableOpacity style={styles.profileContainer}>
+              <Link href="register">
               <Image
                 source={ProfilePic}
                 style={styles.profileImage}
               />
+              </Link>
               <View style={styles.notificationDot} />
             </TouchableOpacity>
           </View>

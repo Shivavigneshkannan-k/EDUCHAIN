@@ -10,15 +10,15 @@ export default function RootLayout() {
       />
       <Stack.Screen
         name='course'
-        options={{ title: "Course", headerShown: false }}
+        options={{ title: "Course", headerShown: true }}
       />
       <Stack.Screen
         name='(auth)/login'
-        options={{ title: "Sign In", headerShown: false }}
+        options={{ title: "Sign In", headerShown: true }}
       />
       <Stack.Screen
         name='(auth)/register'
-        options={{ title: "Sign Up", headerShown: false }}
+        options={{ title: "Sign Up", headerShown: true }}
       />
     </Stack>
   );

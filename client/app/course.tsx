@@ -64,18 +64,17 @@ const Course = () => {
       { id: 6, title: "API Integration", duration: "50 min", completed: false }
     ]
   };
-
   return (
     <ScrollView
-      style={[commonStyles.safeArea, { paddingTop: insets.top }]}
+      style={[commonStyles.safeArea, { paddingTop: insets.top,paddingBottom:insets.bottom }]}
       showsVerticalScrollIndicator={false}>
       {/* Header */}
-      <View style={styles.header}>
+      {/* <View style={styles.header}>
         <TouchableOpacity style={styles.backButton}>
           <Text style={styles.backButtonText}>←</Text>
         </TouchableOpacity>
         <Text style={[styles.headerTitle]}>Course</Text>
-      </View>
+      </View> */}
 
       {/* Course Info */}
       <View style={styles.courseInfo}>
@@ -208,7 +207,6 @@ const styles = StyleSheet.create({
   courseInfo: {
     backgroundColor: colors.surface,
     padding: spacing.lg,
-    marginTop: spacing.xs
   },
 
   courseTitle: {
