@@ -1,4 +1,4 @@
-// import "../global.css";
+import "../global.css";
 import { Stack } from "expo-router";
 
 export default function RootLayout() {
@@ -6,11 +6,19 @@ export default function RootLayout() {
     <Stack>
       <Stack.Screen
         name='index'
-        options={{ title: "Home" ,headerShown: false }}
+        options={{ title: "Home", headerShown: false }}
       />
       <Stack.Screen
-        name="course"
-        options={{title:"Course",headerShown:false}}
+        name='course'
+        options={{ title: "Course", headerShown: false }}
+      />
+      <Stack.Screen
+        name='(auth)/login'
+        options={{ title: "Sign In", headerShown: false }}
+      />
+      <Stack.Screen
+        name='(auth)/register'
+        options={{ title: "Sign Up", headerShown: false }}
       />
     </Stack>
   );
