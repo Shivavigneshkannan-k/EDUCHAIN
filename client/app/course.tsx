@@ -17,6 +17,7 @@ import {
   shadows,
   commonStyles
 } from "../styles/theme";
+import AudioRecorder from "./audio.tsx"
 
 const Course = () => {
   const insets = useSafeAreaInsets();
@@ -149,6 +150,7 @@ const Course = () => {
 
           </TouchableOpacity>
         ))}
+      <AudioRecorder />
       </View>
     </ScrollView>
   );
